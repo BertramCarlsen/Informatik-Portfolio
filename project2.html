@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tab");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].style.borderBottom = "2px solid transparent";
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.style.borderBottom = "2px solid #3a7bd5";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Eksamensprojekt - Database</h1>
+        <p>Til eksamensprojektet har jeg lavet et "workspace", hvor du kan tage noter og holde styr på dine opgaver.</p>
+        <a href="index.html">Back to Portfolio</a>
+
+        <div class="tab-container">
+            <div class="tabs">
+                <button class="tab" onclick="openTab(event, 'file1')">index.php</button>
+                <button class="tab" onclick="openTab(event, 'file2')">config.php</button>
+                <button class="tab" onclick="openTab(event, 'file3')">login.php</button>
+                <button class="tab" onclick="openTab(event, 'file4')">register.php</button>
+                <button class="tab" onclick="openTab(event, 'file5')">logout.php</button>
+                <button class="tab" onclick="openTab(event, 'file6')">utils.php</button>
+                <button class="tab" onclick="openTab(event, 'file7')">style.css</button>
+                <button class="tab" onclick="openTab(event, 'file8')">Database</button>
+
+            </div>
+
+            <div id="file1" class="tab-content">
+                <h3>index.php</h3>
+                <img src="assets/project2_1.png">
+            </div>
+            
+            <div id="file2" class="tab-content">
+                <h3>config.php</h3>
+                <img src="assets/project2_2.png">
+            </div>
+
+            <div id="file3" class="tab-content">
+                <h3>login.php</h3>
+                <img src="assets/project2_3.png">
+            </div>
+
+            <div id="file4" class="tab-content">
+                <h3>register.php</h3>
+                <img src="assets/project2_4.png">
+            </div>
+
+            <div id="file5" class="tab-content">
+                <h3>logout.php</h3>
+                <img src="assets/project2_5.png">
+            </div>
+
+            <div id="file6" class="tab-content">
+                <h3>utils.php</h3>
+                <img src="assets/project2_6.png">
+            </div>
+
+            <div id="file7" class="tab-content">
+                <h3>style.css</h3>
+                <img src="assets/project2_7.png">
+            </div>
+
+            <div id="file8" class="tab-content">
+                <h3>Database</h3>
+                <img src="assets/db_notes.png">
+                <img src="assets/db_tasks.png">
+                <img src="assets/db_users.png">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
